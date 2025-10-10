@@ -1,9 +1,9 @@
-# Algoritmos y Estructuras de Datos - UNDAV 
+# Algoritmos y Estructuras de Datos - UNDAV
 
 ## Introducción
 
 El material de la comisión se encuentra en el [campus de la Universidad](https://ead.undav.edu.ar)
 
-## Este repositorio: ejemplos varios que vamos subiendo durante el cuatimestre
+## Este repositorio
 
-En este repositorio vas a encontrar archivos con ejemplos que trabajemos en clase o usemos como elementos en clase
+En este repositorio encontraras ejercicios ó ejemplos sobre ordenamiento y búsqueda en vectores
