@@ -1,9 +1,11 @@
 #include <iostream>
 #include "funciones_auxiliares_vectores_enteros.cpp"
 
-const int CANT_ELEMENTOS_BUSQUEDA = 10;
+using namespace std;
 
-int busqueda_binaria(int vector[], int n, int clave)
+const int CANT_ELEMENTOS = 7;
+
+int busquedaBinaria(int vector[], int n, float clave)
 {
     int izquierda = 0, derecha = n - 1, central;
     bool encontrado = false;
@@ -22,18 +24,15 @@ int busqueda_binaria(int vector[], int n, int clave)
     }
     return encontrado ? central : -1;
     // central si encontrado –1 otro caso
-};
+}
 
 int main()
 {
-    int vector1[] = {1, 8, 9, 10, 15, 50, 87, 56, 900, 1200};
-    // recordar que debe estar ordenado el vector para que se pueda usar el algoritmo de búsqueda binaria
-    imprimirVector("Vector ordenado", vector1, CANT_ELEMENTOS_BUSQUEDA);
+    int vector1[] = {7, 8, 9, 10, 15, 45, 88};
 
-    // buscamos dos elementos, uno que está, otro que no
-    int posicion = busqueda_binaria(vector1, CANT_ELEMENTOS_BUSQUEDA, 10);
-    cout << "Posicion devuelta: " << posicion << endl;
+    imprimirVector("Ordenado", vector1, CANT_ELEMENTOS);
 
-    posicion = busqueda_binaria(vector1, CANT_ELEMENTOS_BUSQUEDA, 298);
-    cout << "Posicion devuelta: " << posicion << endl;
+    cout << "Posicion: " << busquedaBinaria(vector1, CANT_ELEMENTOS, 10);
+
+    return EXIT_SUCCESS;
 }
